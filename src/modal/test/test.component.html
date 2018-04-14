@@ -1,0 +1,9 @@
+<ion-content>
+<h1>This is Test modal!</h1>
+    <ul>
+        <li *ngFor="let item of this.list">
+            <input type="checkbox" [(ngModel)]="item.checked">{{item.label}}
+        </li>
+    </ul>
+    <button ion-button (click)="dismiss()">Close!</button>
+</ion-content>
